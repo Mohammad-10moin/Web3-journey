@@ -7,10 +7,10 @@ const crypto =require('crypto');
 
 let input=0;
 while(true){
-    inputString=input.toString();
+    inputString="moin"+input.toString();
     // console.log(inputString);
     const hash=crypto.createHash('sha256').update(inputString).digest('hex');
-    if(hash.startsWith("101103")){
+    if(hash.startsWith("00000")){
         console.log(hash);
         console.log(inputString);
         break;
